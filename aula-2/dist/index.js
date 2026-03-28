@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // Especialidades
 const cardiologia = {
     id: 1,
@@ -110,4 +112,3 @@ function listarConsultasFuturas(consultas) {
 }
 //Array Tipado de Consultas
 const consultas = [];
-export {};

@@ -1,5 +1,6 @@
 "use strict";
 const produtos = [
+    // Criando um Array de Produtos
     {
         id: 1,
         nome: "iPhone 15",
@@ -38,10 +39,11 @@ const produtos = [
 ];
 function exibirProduto(produto) {
     const precoFormatado = produto.preco.toLocaleString("pt-BR", {
+        // Formata o preço no padrão brasileiro: R$ 5.999,00
         style: "currency",
         currency: "BRL",
-    });
-    const status = produto.emEstoque ? "✅ disponível" : "❌ indisponível";
+    }); // Define ícone e texto conforme disponibilidade
+    const status = produto.emEstoque ? "✅ disponível" : "❌ indisponível"; // Monta e retorna a string final
     return `[${produto.categoria}] ${produto.nome} - ${precoFormatado} ${status}`;
 }
 console.log("=== Catálogo de Produtos ===\n");
